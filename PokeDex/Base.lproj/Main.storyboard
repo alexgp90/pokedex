@@ -38,7 +38,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="42r-fI-JSx">
                                 <rect key="frame" x="0.0" y="109" width="375" height="558"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2lA-Mi-yrD">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2lA-Mi-yrD">
                                 <rect key="frame" x="20" y="129" width="335" height="518"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LQg-ve-j7r">
@@ -50,18 +50,18 @@
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="9gG-vu-ob7" customClass="PokeCell" customModule="PokeDex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="102" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-q1-ZgM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="76"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="102" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-q1-ZgM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kc-SQ-n1W">
-                                                    <rect key="frame" x="0.0" y="76" width="105" height="29"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kc-SQ-n1W">
+                                                    <rect key="frame" x="0.0" y="87" width="105" height="18"/>
                                                     <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,8 +73,11 @@
                                         <constraints>
                                             <constraint firstItem="5kc-SQ-n1W" firstAttribute="leading" secondItem="9gG-vu-ob7" secondAttribute="leading" id="0pb-ak-mia"/>
                                             <constraint firstAttribute="bottom" secondItem="5kc-SQ-n1W" secondAttribute="bottom" id="256-0p-HxF"/>
+                                            <constraint firstAttribute="trailing" secondItem="nXh-q1-ZgM" secondAttribute="trailing" id="3Pb-sC-bHy"/>
                                             <constraint firstAttribute="trailing" secondItem="5kc-SQ-n1W" secondAttribute="trailing" id="SlT-2F-h91"/>
-                                            <constraint firstItem="5kc-SQ-n1W" firstAttribute="top" secondItem="nXh-q1-ZgM" secondAttribute="bottom" id="t9g-j7-zHD"/>
+                                            <constraint firstItem="nXh-q1-ZgM" firstAttribute="leading" secondItem="9gG-vu-ob7" secondAttribute="leading" id="ZSa-fH-erV"/>
+                                            <constraint firstItem="5kc-SQ-n1W" firstAttribute="top" relation="lessThanOrEqual" secondItem="nXh-q1-ZgM" secondAttribute="bottom" constant="5" id="t9g-j7-zHD"/>
+                                            <constraint firstItem="nXh-q1-ZgM" firstAttribute="top" secondItem="9gG-vu-ob7" secondAttribute="top" id="xd0-S0-OTh"/>
                                         </constraints>
                                         <size key="customSize" width="105" height="105"/>
                                         <connections>

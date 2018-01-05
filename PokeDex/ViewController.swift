@@ -79,7 +79,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         return 1;
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 105, height: 105);
+        return CGSize(width: 110 , height: 110);
         
     }
     override func didReceiveMemoryWarning() {
