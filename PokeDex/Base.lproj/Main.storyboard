@@ -151,6 +151,9 @@
                                         <rect key="frame" x="8" y="18" width="77" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="&lt; Back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Uzv-lI-OBe" eventType="touchUpInside" id="ZEq-1Y-I56"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -395,7 +398,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="5cF-7O-BbF" id="tAg-51-u42"/>
+                        <outlet property="baseattackLabel" destination="2VA-6D-hdr" id="Bx8-tO-oVH"/>
+                        <outlet property="currentEvoImage" destination="b41-o4-fWx" id="fek-DW-Osj"/>
+                        <outlet property="defenseLabel" destination="306-5w-UPw" id="1bU-h5-tCN"/>
+                        <outlet property="evoLabel" destination="UxD-7w-FTs" id="saE-Dh-9I9"/>
+                        <outlet property="heightLabel" destination="wpL-A5-Cnu" id="zKy-59-UGG"/>
+                        <outlet property="idLabel" destination="fM5-Ox-5B9" id="Joa-Oy-ZfS"/>
+                        <outlet property="nextEvoImage" destination="aeN-zy-7o8" id="D3m-HR-bCQ"/>
                         <outlet property="selectedPokemon" destination="6f1-bb-Yzs" id="QEf-Kq-Xip"/>
+                        <outlet property="typeLabel" destination="UMJ-hC-3Pz" id="GBV-Fz-F6m"/>
+                        <outlet property="weightLabel" destination="gf8-LU-DYh" id="Pfe-dD-a9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GK3-Qj-hCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
